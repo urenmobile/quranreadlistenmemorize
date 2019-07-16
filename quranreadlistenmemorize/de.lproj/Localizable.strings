@@ -1,0 +1,90 @@
+/* 
+  Localizable.strings
+  quranreadlistenmemorize
+
+  Created by Remzi YILDIRIM on 2/5/19.
+  Copyright © 2019 Remzi YILDIRIM. All rights reserved.
+*/
+
+"Yes"             = "Ja";
+"No"              = "Nein";
+"Ok"              = "OK";
+"Cancel"          = "Stornieren";
+"Settings"        = "die Einstellungen";
+"Error"           = "Fehler";
+"Warning"         = "Warnung";
+"Loading"         = "Wird geladen";
+"UnknownError"    = "Unbekannter Fehler aufgetreten";
+"Download"        = "Herunterladen";
+"Downloading"     = "Herunterladen";
+"Send"            = "Senden";
+
+// Permission
+"PermissionNotification" = "Benachrichtigung";
+"PermissionLocation"     = "Ort";
+"PermissionNotNow"   = "Nicht Jetzt";
+"PermissionGiveAccess"   = "Zugriff geben";
+"PermissionGiveAccessLocationTitle" = "Lassen Sie Kuran Ezan auf Ihren Standort Zugreifen";
+"PermissionGiveAccessLocationBody" = "Die App muss auf Ihren Standort zugreifen, um die Richtung der Qibla zu bestimmen. Möchten Sie jetzt Zugriff gewähren?";
+"PermissionAccessDisableLocationTitle" = "Der Standortzugriff ist Deaktiviert";
+"PermissionAccessDisableLocationBody" = "Ändern Sie die Standortberechtigung in Ihren Einstellungen, um die Qibla-Richtung festzulegen.";
+"PermissionGiveAccessNotificationTitle" = "Lassen Sie Kuran Ezan eine Benachrichtigung Senden";
+"PermissionGiveAccessNotificationBody" = "Die App muss über eine Benachrichtigungserlaubnis verfügen, um Sie vor der Gebetszeit zu warnen. Möchten Sie jetzt Zugriff gewähren?";
+"PermissionAccessDisableNotificationTitle" = "Gebetszeit-Benachrichtigung ist Deaktiviert";
+"PermissionAccessDisableNotificationBody" = "Ändern Sie die Benachrichtigungsberechtigung in Ihren Einstellungen, um vor den Gebetszeiten benachrichtigt zu werden.";
+
+// Internet connectin
+"NoInternetConnection"        = "Keine Internetverbindung";
+"NoInternetConnectionMessage" = "Stellen Sie sicher, dass Ihr Gerät mit dem Internet verbunden ist.";
+
+// Surah
+"SurahSurahs" = "Surahs";
+"SurahQuran" = "Koran";
+"SurahAyahs" = "Verse";
+
+// Edition
+"EditionTranslations" = "Übersetzungen";
+"EditionSelectTranslation" = "Wählen Sie Übersetzung";
+"EditionSelectedTranslation" = "Ausgewählte Übersetzung";
+"DownloadTranslationMessage" = "Möchten Sie die Übersetzung des Korans herunterladen?";
+"DownloadContinueTranslationMessage" = "Bitte warten Sie, bis der Download abgeschlossen ist.";
+
+// Prayer
+"PrayerSetAlarm" = "Wecker stellen";
+"PrayerTimes" = "Gebetszeiten";
+"PrayerCountries" = "Länder";
+"PrayerFajr" = "Fajr";
+"PrayerSunrise" = "Sonnenaufgang";
+"PrayerDhuhr" = "Dhuhr";
+"PrayerAsr" = "Asr";
+"PrayerMaghrib" = "Maghrib";
+"PrayerIsha" = "Isha";
+"PrayerRemainingTime" = "Verbleibende Zeit";
+"PrayerSelectLocationHeader" = "LAGE UND ZEITINFORMATIONEN";
+"PrayerSelectLocation" = "Ort auswählen";
+"PrayerSelectLocationFooter" = "Folgen Sie den Gebetszeiten, indem Sie die Stadt auswählen.";
+"PrayerTodayLocationFooter" = "Heutige Gebetszeiten-Informationen. Sie können den Alarm einstellen, indem Sie die entsprechende Gebetszeit auswählen.";
+"PrayerMonthlyPrayerTimes" = "Monatliche Gebetszeiten";
+"PrayerAlarmSettings" = "Alarmeinstellungen";
+"PrayerInTime" = "Rechtzeitig";
+"PrayerMinutesBefore" = "Minuten vor";
+"PrayerReminderBeforeTime" = "Erinnerung vor der Zeit";
+"PrayerReminderInTime" = "Erinnerung rechtzeitig";
+"PrayerAlarmSound" = "Alarmton";
+"PrayerSoundDefault" = "Standard Sound";
+"PrayerSoundBismillah" = "Bismillah";
+"PrayerSoundAssalatu" = "Assalatu Khairum Minan Naum";
+"PrayerSoundAzanFirst" = "Azan 1";
+"PrayerSoundAzanSecond" = "Azan 2";
+"PrayerSoundMelodiFirst" = "Melodie 1";
+"PrayerSoundMelodiSecond" = "Melodie 2";
+
+// More
+"MoreQibla" = "Qibla";
+"MoreDhikr" = "Dhikr";
+"MoreHolyDayMessage" = "Botschaft des Heiligen Tages";
+"MoreDhikrReset" = "Möchten Sie den Zähler zurücksetzen?";
+
+// Notification
+"NotificationBodyInTime" = "%@: %@ Zeit.";
+"NotificationBodyBeforeTime" = "%@: %@ Zeit %d minuten verbleibend.";

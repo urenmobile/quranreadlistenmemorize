@@ -1,0 +1,90 @@
+/* 
+  Localizable.strings
+  quranreadlistenmemorize
+
+  Created by Remzi YILDIRIM on 2/5/19.
+  Copyright © 2019 Remzi YILDIRIM. All rights reserved.
+*/
+
+"Yes"             = "हाँ";
+"No"              = "नहीं";
+"Ok"              = "ठीक";
+"Cancel"          = "रद्द करना";
+"Settings"        = "सेटिंग्स";
+"Error"           = "त्रुटि";
+"Warning"         = "चेतावनी";
+"Loading"         = "लोड हो रहा है";
+"UnknownError"    = "अज्ञात त्रुटि हुई";
+"Download"        = "डाउनलोड";
+"Downloading"     = "डाउनलोड कर रहा है";
+"Send"            = "भेजना";
+
+// Permission
+"PermissionNotification" = "अधिसूचना";
+"PermissionLocation"     = "स्थान";
+"PermissionNotNow"   = "अभी नहीं";
+"PermissionGiveAccess"   = "पहुँच दे";
+"PermissionGiveAccessLocationTitle" = "कुरआन एज़ान को अपने स्थान पर पहुंचने दें";
+"PermissionGiveAccessLocationBody" = "एप्लिकेशन को Qibla दिशा निर्धारित करने के लिए आपके स्थान तक पहुंचने की आवश्यकता है। क्या आप अब एक्सेस देना चाहेंगे?";
+"PermissionAccessDisableLocationTitle" = "स्थान पहुँच अक्षम है";
+"PermissionAccessDisableLocationBody" = "किबला दिशा निर्धारित करने के लिए अपनी सेटिंग्स से स्थान की अनुमति बदलें।";
+"PermissionGiveAccessNotificationTitle" = "कुरआन एज़ान को अधिसूचना भेजें";
+"PermissionGiveAccessNotificationBody" = "ऐप को प्रार्थना समय से पहले आपको अलर्ट करने के लिए अनुमति की आवश्यकता है। क्या आप अब एक्सेस देना चाहेंगे?";
+"PermissionAccessDisableNotificationTitle" = "प्रार्थना का समय अधिसूचना अक्षम है";
+"PermissionAccessDisableNotificationBody" = "प्रार्थना समय से पहले अधिसूचना प्राप्त करने के लिए अपनी सेटिंग्स से अधिसूचना अनुमति बदलें।";
+
+// Internet connectin
+"NoInternetConnection"        = "कोई इंटरनेट कनेक्शन नहीं";
+"NoInternetConnectionMessage" = "सुनिश्चित करें कि आपका डिवाइस इंटरनेट से जुड़ा है।";
+
+// Surah
+"SurahSurahs" = "सूरहा";
+"SurahQuran" = "कुरान";
+"SurahAyahs" = "छंद";
+
+// Edition
+"EditionTranslations" = "अनुवाद";
+"EditionSelectTranslation" = "अनुवाद का चयन करें";
+"EditionSelectedTranslation" = "चयनित अनुवाद";
+"DownloadTranslationMessage" = "क्या आप कुरान अनुवाद डाउनलोड करना चाहेंगे?";
+"DownloadContinueTranslationMessage" = "कृपया डाउनलोड समाप्त होने तक प्रतीक्षा करें।";
+
+// Prayer
+"PrayerSetAlarm" = "अलार्म सेट करो";
+"PrayerTimes" = "प्रार्थना का समय";
+"PrayerCountries" = "देश";
+"PrayerFajr" = "Fajr";
+"PrayerSunrise" = "Sunrise";
+"PrayerDhuhr" = "Dhuhr";
+"PrayerAsr" = "Asr";
+"PrayerMaghrib" = "Maghrib";
+"PrayerIsha" = "Isha";
+"PrayerRemainingTime" = "बचा हुआ समय";
+"PrayerSelectLocationHeader" = "स्थान और समय की जानकारी";
+"PrayerSelectLocation" = "स्थान चुनें";
+"PrayerSelectLocationFooter" = "शहर का चयन करके प्रार्थना समय का पालन करें।";
+"PrayerTodayLocationFooter" = "आज की प्रार्थना के समय की जानकारी। आप इसी प्रार्थना समय का चयन करके अलार्म सेट कर सकते हैं।";
+"PrayerMonthlyPrayerTimes" = "मासिक प्रार्थना का समय";
+"PrayerAlarmSettings" = "अलार्म सेटिंग्स";
+"PrayerInTime" = "समय के भीतर";
+"PrayerMinutesBefore" = "मिनट पहले";
+"PrayerReminderBeforeTime" = "समय से पहले याद दिलाएं";
+"PrayerReminderInTime" = "समय में याद दिलाएं";
+"PrayerAlarmSound" = "सचेतक ध्वनि";
+"PrayerSoundDefault" = "डिफ़ॉल्ट ध्वनि";
+"PrayerSoundBismillah" = "बिस्मिल्लाह";
+"PrayerSoundAssalatu" = "असालतु खिरुम मिनन नाम";
+"PrayerSoundAzanFirst" = "अज़ान १";
+"PrayerSoundAzanSecond" = "अज़ान २";
+"PrayerSoundMelodiFirst" = "मेलोडी १";
+"PrayerSoundMelodiSecond" = "मेलोडी २";
+
+// More
+"MoreQibla" = "किबला";
+"MoreDhikr" = "Dhikr";
+"MoreHolyDayMessage" = "पवित्र दिवस संदेश";
+"MoreDhikrReset" = "क्या आप काउंटर रीसेट करना चाहते हैं?";
+
+// Notification
+"NotificationBodyInTime" = "%@ के लिए %@ का समय।";
+"NotificationBodyBeforeTime" = "%@ के लिए %@ का समय %d मिनट रह गये।";

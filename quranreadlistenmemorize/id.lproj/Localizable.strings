@@ -1,0 +1,90 @@
+/* 
+  Localizable.strings
+  quranreadlistenmemorize
+
+  Created by Remzi YILDIRIM on 2/5/19.
+  Copyright © 2019 Remzi YILDIRIM. All rights reserved.
+*/
+
+"Yes"             = "iya nih";
+"No"              = "Tidak";
+"Ok"              = "Baik";
+"Cancel"          = "Membatalkan";
+"Settings"        = "Pengaturan";
+"Error"           = "Kesalahan";
+"Warning"         = "Peringatan";
+"Loading"         = "Pemuatan";
+"UnknownError"    = "Terjadi kesalahan tidak dikenal";
+"Download"        = "Unduh";
+"Downloading"     = "Mengunduh";
+"Send"            = "Kirim";
+
+// Permission
+"PermissionNotification" = "Pemberitahuan";
+"PermissionLocation"     = "Lokasi";
+"PermissionNotNow"   = "Tidak Sekarang";
+"PermissionGiveAccess"   = "Berikan Akses";
+"PermissionGiveAccessLocationTitle" = "Biarkan Kuran Ezan Mengakses Lokasi Anda";
+"PermissionGiveAccessLocationBody" = "Aplikasi ini perlu mengakses lokasi Anda untuk menentukan arah kiblat. Apakah Anda ingin Memberikan Akses sekarang?";
+"PermissionAccessDisableLocationTitle" = "Akses Lokasi Dinonaktifkan";
+"PermissionAccessDisableLocationBody" = "Ubah izin lokasi dari pengaturan Anda untuk menentukan arah kiblat.";
+"PermissionGiveAccessNotificationTitle" = "Biarkan Kuran Ezan Kirim Notifikasi";
+"PermissionGiveAccessNotificationBody" = "Aplikasi perlu pemberitahuan izin untuk mengingatkan Anda sebelum waktu sholat. Apakah Anda ingin Memberikan Akses sekarang?";
+"PermissionAccessDisableNotificationTitle" = "Pemberitahuan Waktu Sholat Dinonaktifkan";
+"PermissionAccessDisableNotificationBody" = "Ubah izin pemberitahuan dari pengaturan Anda untuk mendapatkan pemberitahuan sebelum waktu shalat.";
+
+// Internet connectin
+"NoInternetConnection"        = "Tidak Ada Koneksi Internet";
+"NoInternetConnectionMessage" = "Pastikan perangkat Anda terhubung ke internet.";
+
+// Surah
+"SurahSurahs" = "Surahs";
+"SurahQuran" = "Quran";
+"SurahAyahs" = "Ayat";
+
+// Edition
+"EditionTranslations" = "Terjemahan";
+"EditionSelectTranslation" = "Pilih Terjemahan";
+"EditionSelectedTranslation" = "Terjemahan Terpilih";
+"DownloadTranslationMessage" = "Apakah Anda ingin mengunduh terjemahan Quran?";
+"DownloadContinueTranslationMessage" = "Harap tunggu hingga unduhan selesai.";
+
+// Prayer
+"PrayerSetAlarm" = "Pasang Alarm";
+"PrayerTimes" = "Waktu Sholat";
+"PrayerCountries" = "Negara";
+"PrayerFajr" = "Subuh";
+"PrayerSunrise" = "Matahari Terbit";
+"PrayerDhuhr" = "Dhuhr";
+"PrayerAsr" = "Asr";
+"PrayerMaghrib" = "Maghrib";
+"PrayerIsha" = "Isha";
+"PrayerRemainingTime" = "Waktu Yang Tersisa";
+"PrayerSelectLocationHeader" = "INFORMASI LOKASI DAN WAKTU";
+"PrayerSelectLocation" = "Pilih Lokasi";
+"PrayerSelectLocationFooter" = "Ikuti waktu sholat dengan memilih kota.";
+"PrayerTodayLocationFooter" = "Informasi waktu shalat hari ini. Anda dapat mengatur alarm dengan memilih waktu sholat yang sesuai.";
+"PrayerMonthlyPrayerTimes" = "Waktu Sholat Bulanan";
+"PrayerAlarmSettings" = "Pengaturan Alarm";
+"PrayerInTime" = "Pada waktunya";
+"PrayerMinutesBefore" = "menit sebelumnya";
+"PrayerReminderBeforeTime" = "Pengingat sebelum waktu";
+"PrayerReminderInTime" = "Pengingat waktu";
+"PrayerAlarmSound" = "Suara alarm";
+"PrayerSoundDefault" = "Suara Bawaan";
+"PrayerSoundBismillah" = "Bismillah";
+"PrayerSoundAssalatu" = "Assalatu Khairum Minan Naum";
+"PrayerSoundAzanFirst" = "Azan 1";
+"PrayerSoundAzanSecond" = "Azan 2";
+"PrayerSoundMelodiFirst" = "Melodi 1";
+"PrayerSoundMelodiSecond" = "Melodi 2";
+
+// More
+"MoreQibla" = "Kiblat";
+"MoreDhikr" = "Dzikir";
+"MoreHolyDayMessage" = "Pesan Hari Suci";
+"MoreDhikrReset" = "Apakah Anda ingin mengatur ulang penghitung?";
+
+// Notification
+"NotificationBodyInTime" = "%@: %@ Waktu.";
+"NotificationBodyBeforeTime" = "%@: %@ Waktu %d menit tersisa.";

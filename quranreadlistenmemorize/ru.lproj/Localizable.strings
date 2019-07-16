@@ -1,0 +1,83 @@
+/* 
+  Localizable.strings
+  quranreadlistenmemorize
+
+  Created by Remzi YILDIRIM on 2/5/19.
+  Copyright © 2019 Remzi YILDIRIM. All rights reserved.
+*/
+
+"Yes"             = "Yes";
+"No"              = "No";
+"Ok"              = "OK";
+"Cancel"          = "Cancel";
+"Settings"        = "Settings";
+"Error"           = "Error";
+"Warning"         = "Warning";
+"Loading"         = "Loading";
+"UnknownError"    = "Unknown error occurred";
+"Download"        = "Download";
+"Downloading"     = "Downloading";
+"Send"            = "Send";
+
+// Permission
+"PermissionNotification" = "Notification";
+"PermissionLocation"     = "Location";
+"PermissionNotNow"   = "Not Now";
+"PermissionGiveAccess"   = "Give Access";
+"PermissionGiveAccessTitle" = "Allow Access to %@";
+"PermissionGiveAccessBody" = "Please allow to access your %@.";
+"PermissionAccessDisableTitle" = "Access %@ Disable";
+"PermissionAccessDisableBody" = "Please enable %@ in Settings.";
+
+// Internet connectin
+"NoInternetConnection"        = "No Internet Connection";
+"NoInternetConnectionMessage" = "Make sure your device is connected to the internet.";
+
+// Surah
+"SurahSurahs" = "Surahs";
+"SurahQuran" = "Quran";
+
+// Edition
+"EditionTranslations" = "Translations";
+"EditionSelectTranslation" = "Select Translation";
+"DownloadTranslationMessage" = "Would you like to download Quran translation?";
+
+// Prayer
+"PrayerSetAlarm" = "Set Alarm";
+"PrayerTimes" = "Prayer Times";
+"PrayerCountries" = "Countries";
+"PrayerFajr" = "Fajr";
+"PrayerSunrise" = "Sunrise";
+"PrayerDhuhr" = "Dhuhr";
+"PrayerAsr" = "Asr";
+"PrayerMaghrib" = "Maghrib";
+"PrayerIsha" = "Isha";
+"PrayerRemainingTime" = "Remaining Time";
+"PrayerSelectLocationHeader" = "LOCATION AND TIME INFORMATION";
+"PrayerSelectLocation" = "Select Location";
+"PrayerSelectLocationFooter" = "Follow the prayer times by selecting the city.";
+"PrayerTodayLocationFooter" = "Today's prayer times information. You can set the alarm by selecting the corresponding prayer time.";
+"PrayerMonthlyPrayerTimes" = "Monthly Prayer Times";
+"PrayerAlarmSettings" = "Alarm Settings";
+"PrayerInTime" = "In time";
+"PrayerMinutesBefore" = "minutes before";
+"PrayerReminderBeforeTime" = "Reminder before time";
+"PrayerReminderInTime" = "Reminder in time";
+"PrayerAlarmSound" = "Alarm Sound";
+"PrayerSoundDefault" = "Default Sound";
+"PrayerSoundBismillah" = "Bismillah";
+"PrayerSoundAssalatu" = "Assalatu Khairum Minan Naum";
+"PrayerSoundAzanFirst" = "Azan 1";
+"PrayerSoundAzanSecond" = "Azan 2";
+"PrayerSoundMelodiFirst" = "Melody 1";
+"PrayerSoundMelodiSecond" = "Melody 2";
+
+// More
+"MoreQibla" = "Qibla";
+"MoreDhikr" = "Dhikr";
+"MoreHolyDayMessage" = "Holy Day Message";
+"MoreDhikrReset" = "Do you want to reset the counter?";
+
+// Notification
+"NotificationBodyInTime" = "%@: %@ Time.";
+"NotificationBodyBeforeTime" = "%@: %@ Time %d minutes remaining.";

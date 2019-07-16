@@ -1,0 +1,82 @@
+[
+	{
+	"name" : "Salavat",
+	"reading" : "Allâhumme Salli Alâ Muhammed",
+	"meaning" : "Allâh’ım Muhammed aleyhisselâm’a salât et.",
+	"uthmani" : "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ ",
+	"remainingCount" : 99,
+    "roundCount" : 0
+	},
+	{
+	"name" : "La Havle",
+	"reading" : "Lâ Havle Velâ Kuvvete İllâ Billâh",
+	"meaning" : "Güç ve kuvvet ancak Allâh’a mahsustur.",
+	"uthmani" : "لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ ",
+    "remainingCount" : 99,
+    "roundCount" : 0
+	},
+	{
+	"name" : "La İlahe İllallah",
+	"reading" : "Lâ İlâhe İllallâhu Vahdehu Lâ Şerike Leh, Lehü’l-Mülkü ve Lehu’l-Hamdu ve Huve Alâ Kulli Şeyin Kadîr",
+	"meaning" : "Allâh’tan başka hak ilâh yoktur. O birdir ve tektir, ortağı yoktur. Mülk onundur ve hamd ona mahsustur. O, her şeye gücü yetendir.",
+	"uthmani" : "لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ ",
+    "remainingCount" : 99,
+    "roundCount" : 0
+	},
+	{
+	"name" : "Subhanallah",
+	"reading" : "Subhânallâhi ve Bihamdihi  Subhânallâhi’l-Azîm",
+	"meaning" : "Allâh’ı hamd ile tüm eksiklikten tenzih ederek tesbih ederim. Azîm olan Allâh’ı her türlü noksanlıklardan tenzih ederek tesbih ederim.",
+	"uthmani" : "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ، سُبْحَانَ اللَّهِ العَظِيمِ ",
+    "remainingCount" : 99,
+    "roundCount" : 0
+	},
+	{
+	"name" : "Estağfirullah",
+	"reading" : "Estağfirullâhe Ve Etûbu İleyh",
+	"meaning" : "Allâh’tan mağfiret dilerim ve O’na tevbe ederim.",
+	"uthmani" : "أَسْتَغْفِرُ اللَّهَ وَأَتُوبُ إِلَيْهِ ",
+    "remainingCount" : 99,
+    "roundCount" : 0
+	},
+	{
+	"name" : "Bismillahillezi",
+	"reading" : "Bismillâhillezi lâ yedurru mea ismihi şey’un fi’l ardi ve lâ fi’s-semâi ve huve’s-semi’ul alim",
+	"meaning" : "İsmiyle yerde ve gökte hiç bir şeyin zarar veremeyeceği Allah’ın adıyla. O, hakkıyla işiten ve her şeyi bilendir.",
+	"uthmani" : "بِسْمِ الله الّذِي لا يَضُرّ مَعَ اسْمِهِ شَيْءٌ في الأرْضِ وَلا في السّمَاءِ وَهُوَ السّمِيعُ العَلِيمُ ",
+    "remainingCount" : 99,
+    "roundCount" : 0
+	},
+	{
+	"name" : "Hasbiyallah",
+	"reading" : "Hasbiyâllahû lâ ilâhe illâ huve aleyhi tevekkeltu ve huve rabbu’l arşi’l azim",
+	"meaning" : "Allah bana yeter. O’ndan başka ilâh yoktur. Ben sadece O’na güvenip dayanırım. O yüce Arş’ın sahibidir.",
+	"uthmani" : "حَسْبِيَ اللّهُ لا إِلَهَ إِلاَّ هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ ",
+    "remainingCount" : 99,
+    "roundCount" : 0
+	},
+	{
+	"name" : "Raditu",
+	"reading" : "Radîtu billâhi rabben ve bi’l islami dinen ve bimuhammedin sallâllahû aleyhi ve selleme nebiyyen",
+	"meaning" : "Rab olarak Allah’tan, din olarak İslam’dan, nebi olarak Muhammed (s.a.v)’den razı oldum.",
+	"uthmani" : "رَضيـتُ بِاللهِ رَبَّـاً وَبِالإسْلامِ ديـناً وَبِمُحَـمَّدٍ صلى الله عليه وسلم نَبِيّـاً ",
+    "remainingCount" : 99,
+    "roundCount" : 0
+	},
+	{
+	"name" : "Subhanâllahi Bihamdihi",
+	"reading" : "Subhanâllahi ve bihamdihi adede halkihi, ve ridâ nefsihi, ve zinete arşihi, ve midâde kelimâtihi",
+	"meaning" : "Yarattıklarının sayısınca kendisinin razı olacağı kadar, arşının ağırlığı ve kelimelerinin çokluğunca hamdederek Allah’ı tüm noksanlıklardan tenzih ederim.",
+	"uthmani" : "سُبْحـانَ اللهِ وَبِحَمْـدِهِ عَدَدَ خَلْـقِه ، وَرِضـا نَفْسِـه ، وَزِنَـةَ عَـرْشِـه ، وَمِـدادَ كَلِمـاتِـه",
+    "remainingCount" : 99,
+    "roundCount" : 0
+	},
+	{
+	"name" : "Euzu",
+	"reading" : "Eûzu bikelimâtillahi’t-temmâti min şerri ma halak",
+	"meaning" : "Yarattıklarının şerrinden Allah’ın eksiksiz kelimelerine sığınırım.",
+	"uthmani" : "أَعـوذُ بِكَلِمـاتِ اللّهِ التّـامّـاتِ مِنْ شَـرِّ ما خَلَـق",
+    "remainingCount" : 99,
+    "roundCount" : 0
+	}
+]

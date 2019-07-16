@@ -1,0 +1,90 @@
+/* 
+  Localizable.strings
+  quranreadlistenmemorize
+
+  Created by Remzi YILDIRIM on 2/5/19.
+  Copyright © 2019 Remzi YILDIRIM. All rights reserved.
+*/
+
+"Yes"             = "نعم فعلا";
+"No"              = "لا";
+"Ok"              = "حسنا";
+"Cancel"          = "إلغاء";
+"Settings"        = "الإعدادات";
+"Error"           = "خطأ";
+"Warning"         = "تحذير";
+"Loading"         = "جار التحميل";
+"UnknownError"    = "حدث خطأ غير معروف";
+"Download"        = "تحميل";
+"Downloading"     = "جارى التحميل";
+"Send"            = "إرسال";
+
+// Permission
+"PermissionNotification" = "إعلام";
+"PermissionLocation"     = "موقعك";
+"PermissionNotNow"   = "ليس الان";
+"PermissionGiveAccess"   = "السماح بالولوج";
+"PermissionGiveAccessLocationTitle" = "واسمحوا Kuran Ezan الوصول إلى موقعك";
+"PermissionGiveAccessLocationBody" = "يحتاج التطبيق إلى الوصول إلى موقعك لتحديد اتجاه القبلة. هل ترغب في منح الوصول الآن؟";
+"PermissionAccessDisableLocationTitle" = "تم تعطيل الوصول إلى الموقع";
+"PermissionAccessDisableLocationBody" = "غيّر إذن الموقع من إعداداتك لتحديد اتجاه القبلة.";
+"PermissionGiveAccessNotificationTitle" = "اسمحوا Kuran Ezan إرسال الإخطار";
+"PermissionGiveAccessNotificationBody" = "يحتاج التطبيق إلى إذن إعلام لتنبيهك قبل وقت الصلاة. هل ترغب في منح الوصول الآن؟";
+"PermissionAccessDisableNotificationTitle" = "إخطار وقت الصلاة معطل";
+"PermissionAccessDisableNotificationBody" = "يمكنك تغيير إذن التنبيه من إعداداتك للحصول على إشعار قبل أوقات الصلاة.";
+
+// Internet connectin
+"NoInternetConnection"        = "لا اتصال إنترنت";
+"NoInternetConnectionMessage" = ".تأكد من اتصال جهازك بالإنترنت";
+
+// Surah
+"SurahSurahs" = "السور";
+"SurahQuran" = "القرآن";
+"SurahAyahs" = "الآيات";
+
+// Edition
+"EditionTranslations" = "ترجمة";
+"EditionSelectTranslation" = "اختر الترجمة";
+"EditionSelectedTranslation" = "الترجمة المختارة";
+"DownloadTranslationMessage" = "هل ترغب في تنزيل ترجمة القرآن الكريم؟";
+"DownloadContinueTranslationMessage" = ".الرجاء الانتظار حتى انتهاء التنزيل";
+
+// Prayer
+"PrayerSetAlarm" = "ضبط المنبه";
+"PrayerTimes" = "أوقات الصلاة";
+"PrayerCountries" = "بلدان";
+"PrayerFajr" = "الفجر";
+"PrayerSunrise" = "شروق الشمس";
+"PrayerDhuhr" = "الظهر";
+"PrayerAsr" = "العصر";
+"PrayerMaghrib" = "المغرب";
+"PrayerIsha" = "العشاء";
+"PrayerRemainingTime" = "الوقت المتبقي";
+"PrayerSelectLocationHeader" = "معلومات الموقع والوقت";
+"PrayerSelectLocation" = "اختر موقعا";
+"PrayerSelectLocationFooter" = ".اتبع أوقات الصلاة عن طريق اختيار المدينة";
+"PrayerTodayLocationFooter" = ".أوقات الصلاة اليوم المعلومات. يمكنك ضبط المنبه باختيار وقت الصلاة المناسب";
+"PrayerMonthlyPrayerTimes" = "أوقات الصلاة الشهرية";
+"PrayerAlarmSettings" = "إعدادات التنبيه";
+"PrayerInTime" = "في الوقت المناسب";
+"PrayerMinutesBefore" = "قبل دقائق";
+"PrayerReminderBeforeTime" = "تذكير قبل الوقت";
+"PrayerReminderInTime" = "تذكير في الوقت المناسب";
+"PrayerAlarmSound" = "صوت المنبه";
+"PrayerSoundDefault" = "الصوت الافتراضي";
+"PrayerSoundBismillah" = "بسم الله";
+"PrayerSoundAssalatu" = "صلوات خيران منان نعوم";
+"PrayerSoundAzanFirst" = "أذان 1";
+"PrayerSoundAzanSecond" = "أذان 2";
+"PrayerSoundMelodiFirst" = "ميلودي 1";
+"PrayerSoundMelodiSecond" = "ميلودي 2";
+
+// More
+"MoreQibla" = "القبلة";
+"MoreDhikr" = "الذكر";
+"MoreHolyDayMessage" = "رسالة اليوم المقدس";
+"MoreDhikrReset" = "هل تريد إعادة ضبط العداد؟";
+
+// Notification
+"NotificationBodyInTime" = ".وقت %@ %@";
+"NotificationBodyBeforeTime" = ".دقائق متبقية %d وقت %@ %@";

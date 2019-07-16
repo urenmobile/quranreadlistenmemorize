@@ -1,4 +1,69 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.99" systemVersion="18F132" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AppConfiguration" representedClassName=".AppConfigurationMO" syncable="YES">
+        <attribute name="prayerTimesExpireDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="selectedAudioEditionId" attributeType="String" syncable="YES"/>
+        <relationship name="city" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PrayerLocation" inverseName="city" inverseEntity="PrayerLocation" syncable="YES"/>
+        <relationship name="country" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PrayerLocation" inverseName="country" inverseEntity="PrayerLocation" syncable="YES"/>
+        <relationship name="county" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PrayerLocation" inverseName="county" inverseEntity="PrayerLocation" syncable="YES"/>
+        <relationship name="edition" maxCount="1" deletionRule="Nullify" destinationEntity="Edition" inverseName="configuration" inverseEntity="Edition" syncable="YES"/>
+    </entity>
+    <entity name="Dhikr" representedClassName=".DhikrMO" syncable="YES">
+        <attribute name="isSoundOn" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="meaning" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="reading" attributeType="String" syncable="YES"/>
+        <attribute name="remainingCount" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="roundCount" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="totalCount" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="uthmani" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Edition" representedClassName=".EditionMO" syncable="YES">
+        <attribute name="englishName" attributeType="String" syncable="YES"/>
+        <attribute name="format" attributeType="String" syncable="YES"/>
+        <attribute name="identifier" attributeType="String" syncable="YES"/>
+        <attribute name="language" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="type" attributeType="String" syncable="YES"/>
+        <relationship name="configuration" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AppConfiguration" inverseName="edition" inverseEntity="AppConfiguration" syncable="YES"/>
+    </entity>
+    <entity name="PrayerLocation" representedClassName=".PrayerLocationMO" syncable="YES">
+        <attribute name="id" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="nameEnglish" attributeType="String" syncable="YES"/>
+        <relationship name="city" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AppConfiguration" inverseName="city" inverseEntity="AppConfiguration" syncable="YES"/>
+        <relationship name="country" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AppConfiguration" inverseName="country" inverseEntity="AppConfiguration" syncable="YES"/>
+        <relationship name="county" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AppConfiguration" inverseName="county" inverseEntity="AppConfiguration" syncable="YES"/>
+    </entity>
+    <entity name="PrayerNotification" representedClassName=".PrayerNotificationMO" syncable="YES">
+        <attribute name="id" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="minutesBefore" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="status" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="sound" maxCount="1" deletionRule="Nullify" destinationEntity="PrayerSound" inverseName="notification" inverseEntity="PrayerSound" syncable="YES"/>
+    </entity>
+    <entity name="PrayerSound" representedClassName=".PrayerSoundMO" syncable="YES">
+        <attribute name="localizedKey" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="notification" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PrayerNotification" inverseName="sound" inverseEntity="PrayerNotification" syncable="YES"/>
+    </entity>
+    <entity name="PrayerTime" representedClassName=".PrayerTimeMO" syncable="YES">
+        <attribute name="asrDate" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dhuhrDate" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="fajrDate" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="gregorianDate" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="hijriDateString" attributeType="String" syncable="YES"/>
+        <attribute name="ishaDate" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="maghribDate" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="sunriseDate" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="AppConfiguration" positionX="101.05859375" positionY="57.7265625" width="128" height="135"/>
+        <element name="Dhikr" positionX="-298.26953125" positionY="231.53515625" width="128" height="165"/>
+        <element name="Edition" positionX="-360" positionY="207" width="128" height="150"/>
+        <element name="PrayerLocation" positionX="382.72265625" positionY="135.9375" width="128" height="135"/>
+        <element name="PrayerNotification" positionX="148.57421875" positionY="267.109375" width="128" height="120"/>
+        <element name="PrayerSound" positionX="-287.69140625" positionY="62.84765625" width="128" height="90"/>
+        <element name="PrayerTime" positionX="-567.81640625" positionY="173.78125" width="128" height="165"/>
+    </elements>
 </model>

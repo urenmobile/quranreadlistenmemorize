@@ -1,0 +1,90 @@
+/* 
+  Localizable.strings
+  quranreadlistenmemorize
+
+  Created by Remzi YILDIRIM on 2/5/19.
+  Copyright © 2019 Remzi YILDIRIM. All rights reserved.
+*/
+
+"Yes"             = "Evet";
+"No"              = "Hayır";
+"Ok"              = "Tamam";
+"Cancel"          = "Vazgeç";
+"Settings"        = "Ayarlar";
+"Error"           = "Hata";
+"Warning"         = "Uyarı";
+"Loading"         = "Yükleniyor";
+"UnknownError"    = "Bilinmeyen Bir Hata Oluştu";
+"Download"        = "İndir";
+"Downloading"     = "İndiriliyor";
+"Send"            = "Gönder";
+
+// Permission
+"PermissionNotification" = "Bildirim";
+"PermissionLocation"     = "Konum";
+"PermissionNotNow"   = "Şimdi Değil";
+"PermissionGiveAccess"   = "Yetki Ver";
+"PermissionGiveAccessLocationTitle" = "Kuran Ezan Konumunuza Erişsin";
+"PermissionGiveAccessLocationBody" = "Uygulama Kıble'nin yönünü belirlemek için lokasyonunuza erişmesi gerekiyor. Şimdi Erişim İzni vermek ister misiniz?";
+"PermissionAccessDisableLocationTitle" = "Lokasyon Erişimi Devre Dışı";
+"PermissionAccessDisableLocationBody" = "Ayarlarınızdan konum iznini değiştirerek Kıble yönünü belirleyebilirsiniz.";
+"PermissionGiveAccessNotificationTitle" = "Kuran Ezan Bildirim Göndersin";
+"PermissionGiveAccessNotificationBody" = "Uygulamaya bildirim gönderme izni vererek namaz vaktinden önce sizi uyarmasını sağlayabilirsiniz. Şimdi Erişim İzni vermek ister misiniz?";
+"PermissionAccessDisableNotificationTitle" = "Namaz Vakti Bildirimi Devre Dışı";
+"PermissionAccessDisableNotificationBody" = "Ayarlarınızdan bildirim iznini değiştirerek namaz vaktinden önce bildirim alabilirsiniz.";
+
+// Internet connectin
+"NoInternetConnection"        = "İnternet Yok";
+"NoInternetConnectionMessage" = "Cihazınızın internete bağlı olduğundan emin olunuz.";
+
+// Surah
+"SurahSurahs" = "Sûreler";
+"SurahQuran" = "Kuran";
+"SurahAyahs" = "Ayetler";
+
+// Edition
+"EditionTranslations" = "Çeviriler";
+"EditionSelectTranslation" = "Çeviri Seçin";
+"EditionSelectedTranslation" = "Seçili Çeviri";
+"DownloadTranslationMessage" = "Kuran çevirisini indirmek istiyor musunuz?";
+"DownloadContinueTranslationMessage" = "Lütfen indirme bitinceye kadar bekleyiniz.";
+
+// Prayer
+"PrayerSetAlarm" = "Alarm Ayarla";
+"PrayerTimes" = "Namaz Vakitleri";
+"PrayerCountries" = "Ülkeler";
+"PrayerFajr" = "İmsak";
+"PrayerSunrise" = "Güneş";
+"PrayerDhuhr" = "Öğle";
+"PrayerAsr" = "İkindi";
+"PrayerMaghrib" = "Akşam";
+"PrayerIsha" = "Yatsı";
+"PrayerRemainingTime" = "Vaktin Çıkmasına Kalan Süre";
+"PrayerSelectLocationHeader" = "LOKASYON VE SÜRE BİLGİLERİ";
+"PrayerSelectLocation" = "Lokasyon Seç";
+"PrayerSelectLocationFooter" = "Şehir seçerek namaz vakitlerini hemen takip edin.";
+"PrayerTodayLocationFooter" = "Bugünün namaz vakit bilgileri. İlgili namaz vaktini seçerek alarm ayarlayabilirsiniz.";
+"PrayerMonthlyPrayerTimes" = "Aylık Namaz Vakitleri";
+"PrayerAlarmSettings" = "Alarm Ayarları";
+"PrayerInTime" = "Zamanında";
+"PrayerMinutesBefore" = "dakika önce";
+"PrayerReminderBeforeTime" = "Vakitten önce uyarı";
+"PrayerReminderInTime" = "Vaktinde uyarı";
+"PrayerAlarmSound" = "Alarm Sesi";
+"PrayerSoundDefault" = "Varsayılan Ses";
+"PrayerSoundBismillah" = "Bismillah";
+"PrayerSoundAssalatu" = "Esselatu Hayrun Minen Nevm";
+"PrayerSoundAzanFirst" = "Ezan 1";
+"PrayerSoundAzanSecond" = "Ezan 2";
+"PrayerSoundMelodiFirst" = "Melodi 1";
+"PrayerSoundMelodiSecond" = "Melodi 2";
+
+// More
+"MoreQibla" = "Kıble";
+"MoreDhikr" = "Zikir";
+"MoreHolyDayMessage" = "Cuma Mesajları";
+"MoreDhikrReset" = "Sayacı sıfırlamak istiyor musunuz?";
+
+// Notification
+"NotificationBodyInTime" = "%@ için %@ Vakti.";
+"NotificationBodyBeforeTime" = "%@ için %@ Vakti'ne %d dakika kaldı.";
