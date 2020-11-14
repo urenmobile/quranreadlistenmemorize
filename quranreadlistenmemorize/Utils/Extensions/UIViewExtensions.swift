@@ -82,6 +82,22 @@ extension UIView {
     }
 }
 
+// MARK: - DSL
+extension UIView {
+    @_functionBuilder
+    struct ConstraintsBuilder {
+        static func buildBlock(_ constraints: NSLayoutConstraint...) -> [NSLayoutConstraint] {
+            constraints
+        }
+    }
+    
+    public func layout(@ConstraintsBuilder using closure: (UIView) -> [NSLayoutConstraint]) {
+        translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate(closure(self))
+    }
+}
+
+// MARK: - Add Child View Controller
 extension UIViewController {
     
     /// An extension add child view controller and move parent

@@ -6,11 +6,6 @@
 //  Copyright © 2019 Remzi YILDIRIM. All rights reserved.
 //
 
-
-//        let startTime = CFAbsoluteTimeGetCurrent()
-//        let timeElapsed = CFAbsoluteTimeGetCurrent() - startTime
-//        print("Time elapsed for \(title): \(timeElapsed) s.")
-
 class Constants {
     static let MaxDhikrCount: Int16 = 99
     static let Suresi = " Sûresi"
@@ -60,29 +55,4 @@ class Constants {
             static let Mp3 = "mp3"
         }
     }
-    
-    struct ApiEndpoint {
-        
-        // http://api.alquran.cloud/v1/quran/{{edition}}
-        static let QuranEditionUrl = "http://api.alquran.cloud/v1/quran/"
-        
-        // http://api.alquran.cloud/v1/edition/format/audio
-        static let QuranAvaliableAudio = "http://api.alquran.cloud/v1/edition/format/audio"
-        
-        // https://cdn.alquran.cloud/media/audio/ayah/{{edition}}/{{ayah}}
-        static let QuranMediaAudio = "https://cdn.alquran.cloud/media/audio/ayah/"
-        
-        // arapcalarini alma
-        // http://api.alquran.cloud/v1/surah/1/quran-uthmani
-        
-        // dil secimi sonrasi
-        // http://api.alquran.cloud/v1/edition?format=text&language=tr&type=translation
-        private static let PrayerMain = "https://ezanvakti.herokuapp.com"
-        static let PrayerCountries = "\(Constants.ApiEndpoint.PrayerMain)/ulkeler"
-        static let PrayerCities = "\(Constants.ApiEndpoint.PrayerMain)/sehirler?ulke="
-        static let PrayerCounties = "\(Constants.ApiEndpoint.PrayerMain)/ilceler?sehir="
-        static let PrayerTimes = "\(Constants.ApiEndpoint.PrayerMain)/vakitler?ilce="
-    }
-    
-    
 }

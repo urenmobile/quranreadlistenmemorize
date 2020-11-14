@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import NetworkPackage
 
 protocol PrayerLocationViewModel: ViewModel {
     var sectionCount: Int { get }
@@ -41,8 +42,11 @@ class PrayerLocationCountriesViewModel: PrayerLocationViewModel {
     
     private func getCountries() {
         state.value = .loading
-        let countriesUrlString = Constants.ApiEndpoint.PrayerCountries
-        APIManager.shared.getDataWithCache(PrayerCountry.self, urlString: countriesUrlString) { [unowned self] in
+        
+        
+        let request = Endpoints.Paths.prayerCountries.asUrlRequest()
+        
+        APIManager.shared.getDataWithCache(PrayerCountry.self, request: request) { [unowned self] in
             handleResult($0)
         }
         
@@ -95,23 +99,30 @@ class PrayerLocationCitiesViewModel: PrayerLocationViewModel {
     
     private func getCities() {
         state.value = .loading
-        let cityUrlString = Constants.ApiEndpoint.PrayerCities + selectedItem.id
-        APIManager.shared.getDataWithCache(PrayerCity.self, urlString: cityUrlString) { [unowned self] in
-            handleResult($0)
+//        let url = Endpoints.PrayerPaths.cities.url.appendingPathComponent(selectedItem.id)
+//
+//        let request = URLRequest(url: url, cachePolicy: .returnCacheDataElseLoad)
+        
+        let queryItems = [URLQueryItem(name: "ulke", value: selectedItem.id)]
+        let request = Endpoints.Paths.prayerCities.asUrlRequestWith(query: queryItems)
+        APIManager.shared.getDataWithCache(PrayerCity.self, request: request) { [weak self] in
+            self?.handleResult($0)
         }
         
-        func handleResult(_ result: NetworkResult<[PrayerCity]>) {
-            switch result {
-            case .success(let items):
-                self.items = items.compactMap({ PrayerLocationViewModelItem(name: $0.name, nameEnglish: $0.nameEnglish, id: $0.id) })
-                self.filteredItems = self.items
-                state.value = self.items.isEmpty ? .empty : .populate
-            case .failure(let apiError):
-                debugPrint("ApiError: \(apiError)")
-                state.value = .error
-            default:
-                return
-            }
+        
+    }
+    
+    private func handleResult(_ result: NetworkResult<[PrayerCity]>) {
+        switch result {
+        case .success(let items):
+            self.items = items.compactMap({ PrayerLocationViewModelItem(name: $0.name, nameEnglish: $0.nameEnglish, id: $0.id) })
+            self.filteredItems = self.items
+            state.value = self.items.isEmpty ? .empty : .populate
+        case .failure(let apiError):
+            debugPrint("ApiError: \(apiError)")
+            state.value = .error
+        default:
+            return
         }
     }
     
@@ -149,23 +160,27 @@ class PrayerLocationCountiesViewModel: PrayerLocationViewModel {
     
     private func getCounties() {
         state.value = .loading
-        let countyUrlString = Constants.ApiEndpoint.PrayerCounties + selectedItem.id
-        APIManager.shared.getDataWithCache(PrayerCounty.self, urlString: countyUrlString) { [unowned self] in
-            handleResult($0)
+        
+        let queryItems = [URLQueryItem(name: "sehir", value: selectedItem.id)]
+        let request = Endpoints.Paths.prayerCounties.asUrlRequestWith(query: queryItems)
+        
+        APIManager.shared.getDataWithCache(PrayerCounty.self, request: request) { [weak self] in
+            self?.handleResult($0)
         }
         
-        func handleResult(_ result: NetworkResult<[PrayerCounty]>) {
-            switch result {
-            case .success(let items):
-                self.items = items.compactMap({ PrayerLocationViewModelItem(name: $0.name, nameEnglish: $0.nameEnglish, id: $0.id) })
-                self.filteredItems = self.items
-                state.value = self.items.isEmpty ? .empty : .populate
-            case .failure(let apiError):
-                debugPrint("ApiError: \(apiError)")
-                state.value = .error
-            default:
-                return
-            }
+    }
+    
+    func handleResult(_ result: NetworkResult<[PrayerCounty]>) {
+        switch result {
+        case .success(let items):
+            self.items = items.compactMap({ PrayerLocationViewModelItem(name: $0.name, nameEnglish: $0.nameEnglish, id: $0.id) })
+            self.filteredItems = self.items
+            state.value = self.items.isEmpty ? .empty : .populate
+        case .failure(let apiError):
+            debugPrint("ApiError: \(apiError)")
+            state.value = .error
+        default:
+            return
         }
     }
     

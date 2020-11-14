@@ -39,12 +39,14 @@ class EditionViewController: BaseTableViewController {
             self.scrollToSelectedItem()
         }
         
-        viewModel.downloadCompletion = { (result) in
-            switch result {
+        viewModel.downloadCompletion = { [weak self]  in
+            switch $0 {
             case .progress(let written, let expected, let progress):
-                self.progressDownload(written, expected, progress)
-            case .success(_):
-                self.finishDownload()
+                self?.progressDownload(written, expected, progress)
+            case .success(let tuple):
+                let destinationUrl = FileOperationManager.shared.localJsonFilePath(for: tuple.sourceUrl)
+                FileOperationManager.shared.copyFile(from: tuple.location, to: destinationUrl)
+                self?.finishDownload()
             case .failure(let apiError):
                 debugPrint("Error oldu: \(apiError)")
             }

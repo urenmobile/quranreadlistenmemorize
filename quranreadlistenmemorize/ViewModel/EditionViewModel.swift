@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreData
+import NetworkPackage
 
 class EditionViewModel: BaseViewModel {
     var items = [[EditionViewModelItem]]()
@@ -26,7 +27,7 @@ class EditionViewModel: BaseViewModel {
     }
     
     let state = Dynamic(State.loading)
-    var downloadCompletion: ((NetworkResult<Bool>) -> Void)?
+    var downloadCompletion: ((NetworkResult<(sourceUrl: URL, location: URL)>) -> Void)?
     
     lazy var fetchedResultController: NSFetchedResultsController<EditionMO> = {
         var fetchRequest: NSFetchRequest<EditionMO> = EditionMO.fetchRequest()
@@ -79,7 +80,9 @@ class EditionViewModel: BaseViewModel {
     func downloadEdition(identifier: String) {
         willDownloadItem.isDownloading = true
         APIManager.shared.completion = downloadCompletion
-        APIManager.shared.downloadAndSaveLocal(identifier: identifier)
+        
+        let request = Endpoints.Paths.quranEditions.asUrlRequest(with: [identifier])
+        APIManager.shared.startDownloadProgress(with: request)
     }
 }
 

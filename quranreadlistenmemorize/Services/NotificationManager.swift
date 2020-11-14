@@ -55,15 +55,6 @@ class NotificationManager {
             content.sound = UNNotificationSound(named: UNNotificationSoundName(rawValue: prayerNotification.sound.name))
         }
         
-//        // sil
-//        let dateFormatter = DateFormatter()
-//        dateFormatter.dateFormat = "dd.MM.yyyy HH:mm:ss"
-//        dateFormatter.timeZone = TimeZone(secondsFromGMT: 60*60*24*3)
-//        dateFormatter.locale = Locale.current
-//
-//        print("Notif Gonderilecek mesaj: \(content.body) - \(dateFormatter.string(from: notifDate))")
-        
-        // TODO: ac
         let dateComponents = Formatter.shared.getDateComponents(date: notifDate)
         
         // Create the trigger as a repeating event.

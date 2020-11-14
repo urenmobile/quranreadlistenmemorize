@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreData
+import NetworkPackage
 
 class PersistentManager {
     
@@ -252,11 +253,14 @@ extension PersistentManager {
     
     // call from PrayerTimeViewController
     func getMonthlyPrayerTimes() {
-        guard let selectedCounty = appConfiguration.county else { return }
+        guard let selectedCounty = appConfiguration.county else {
+            return
+        }
         
-        let countyUrlString = Constants.ApiEndpoint.PrayerTimes + selectedCounty.id
+        let queryItems = [URLQueryItem(name: "ilce", value: selectedCounty.id)]
+        let request = Endpoints.Paths.prayerTimes.asUrlRequestWith(query: queryItems)
         
-        APIManager.shared.getDataWithNoCache(PrayerTime.self, urlString: countyUrlString) { (result) in
+        APIManager.shared.getDataWithNoCache(PrayerTime.self, request: request) { (result) in
             switch result {
             case .success(let items):
                 self.savePrayerTimeToCoreData(prayerTimes: items)

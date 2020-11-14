@@ -18,6 +18,12 @@
 		450C82C7220A2BBD00611473 /* AyahViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450C82C6220A2BBD00611473 /* AyahViewCell.swift */; };
 		45168082221B0D9000E3E4D7 /* DhikrDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45168081221B0D9000E3E4D7 /* DhikrDetailViewController.swift */; };
 		45168084221B0DBF00E3E4D7 /* DhikrDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45168083221B0DBF00E3E4D7 /* DhikrDetailViewModel.swift */; };
+		452235BD25586B6A00C34458 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452235B925586B6A00C34458 /* Environment.swift */; };
+		452235BF25586B6A00C34458 /* EnvironmentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452235BB25586B6A00C34458 /* EnvironmentProvider.swift */; };
+		452235C025586B6A00C34458 /* EnvironmentUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452235BC25586B6A00C34458 /* EnvironmentUtility.swift */; };
+		452235C325586B7400C34458 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452235C225586B7400C34458 /* Endpoints.swift */; };
+		452235C825586BE100C34458 /* FileOperationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452235C725586BE100C34458 /* FileOperationProvider.swift */; };
+		452235D12559871B00C34458 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 452235D02559871B00C34458 /* SwiftPackageProductDependency */; };
 		4525C5122209EC4C00441E6F /* Quran.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4525C5112209EC4C00441E6F /* Quran.bundle */; };
 		452ECE31220983AB0006EF0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452ECE30220983AB0006EF0E /* AppDelegate.swift */; };
 		452ECE39220983AB0006EF0E /* quranreadlistenmemorize.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 452ECE37220983AB0006EF0E /* quranreadlistenmemorize.xcdatamodeld */; };
@@ -30,8 +36,9 @@
 		452ECE592209AE730006EF0E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452ECE582209AE730006EF0E /* Constants.swift */; };
 		452ECE5B2209AE8E0006EF0E /* LocalizedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452ECE5A2209AE8E0006EF0E /* LocalizedConstants.swift */; };
 		452ECE5D2209B2640006EF0E /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452ECE5C2209B2640006EF0E /* UIViewExtensions.swift */; };
-		452ECE602209C54F0006EF0E /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452ECE5F2209C54F0006EF0E /* APIManager.swift */; };
 		45459447220B06DF00FAED4D /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45459446220B06DF00FAED4D /* MainTabBarController.swift */; };
+		459B7061255F24F300744492 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 459B7060255F24F300744492 /* SwiftPackageProductDependency */; };
+		459B7074255F2BF800744492 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 459B7073255F2BF800744492 /* SwiftPackageProductDependency */; };
 		45E6B4352214254E003DA553 /* EditionViewEditionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E6B4342214254E003DA553 /* EditionViewEditionCell.swift */; };
 		45E6B4372214256B003DA553 /* EditionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E6B4362214256B003DA553 /* EditionViewModel.swift */; };
 		45E6B43922143F58003DA553 /* PrayerTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E6B43822143F58003DA553 /* PrayerTimeViewController.swift */; };
@@ -89,7 +96,6 @@
 		45EBE9E42226857A005A35EE /* PrayerTimeMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBE9E22226857A005A35EE /* PrayerTimeMO+CoreDataClass.swift */; };
 		45EBE9E52226857A005A35EE /* PrayerTimeMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBE9E32226857A005A35EE /* PrayerTimeMO+CoreDataProperties.swift */; };
 		45F6DFE6222EF4AD0083F3C8 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F6DFE5222EF4AD0083F3C8 /* Utility.swift */; };
-		B18F12CE4A0A244C89269BC8 /* Pods_quranreadlistenmemorize.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1EFDD201BC2BB9F2ECD42F8 /* Pods_quranreadlistenmemorize.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +110,11 @@
 		450C82C6220A2BBD00611473 /* AyahViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyahViewCell.swift; sourceTree = "<group>"; };
 		45168081221B0D9000E3E4D7 /* DhikrDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhikrDetailViewController.swift; sourceTree = "<group>"; };
 		45168083221B0DBF00E3E4D7 /* DhikrDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhikrDetailViewModel.swift; sourceTree = "<group>"; };
+		452235B925586B6A00C34458 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		452235BB25586B6A00C34458 /* EnvironmentProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentProvider.swift; sourceTree = "<group>"; };
+		452235BC25586B6A00C34458 /* EnvironmentUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentUtility.swift; sourceTree = "<group>"; };
+		452235C225586B7400C34458 /* Endpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		452235C725586BE100C34458 /* FileOperationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileOperationProvider.swift; sourceTree = "<group>"; };
 		4525C5112209EC4C00441E6F /* Quran.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Quran.bundle; sourceTree = "<group>"; };
 		452ECE2D220983AB0006EF0E /* quranreadlistenmemorize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quranreadlistenmemorize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		452ECE30220983AB0006EF0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -119,7 +130,6 @@
 		452ECE582209AE730006EF0E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		452ECE5A2209AE8E0006EF0E /* LocalizedConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedConstants.swift; sourceTree = "<group>"; };
 		452ECE5C2209B2640006EF0E /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
-		452ECE5F2209C54F0006EF0E /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		45459446220B06DF00FAED4D /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		45E6B4342214254E003DA553 /* EditionViewEditionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditionViewEditionCell.swift; sourceTree = "<group>"; };
 		45E6B4362214256B003DA553 /* EditionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditionViewModel.swift; sourceTree = "<group>"; };
@@ -183,9 +193,6 @@
 		45EBE9E22226857A005A35EE /* PrayerTimeMO+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PrayerTimeMO+CoreDataClass.swift"; sourceTree = "<group>"; };
 		45EBE9E32226857A005A35EE /* PrayerTimeMO+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PrayerTimeMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		45F6DFE5222EF4AD0083F3C8 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
-		C882A12837FA2353FD30EC3E /* Pods-quranreadlistenmemorize.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quranreadlistenmemorize.release.xcconfig"; path = "Pods/Target Support Files/Pods-quranreadlistenmemorize/Pods-quranreadlistenmemorize.release.xcconfig"; sourceTree = "<group>"; };
-		E0A99FBB9E19FBAFB471EFD0 /* Pods-quranreadlistenmemorize.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quranreadlistenmemorize.debug.xcconfig"; path = "Pods/Target Support Files/Pods-quranreadlistenmemorize/Pods-quranreadlistenmemorize.debug.xcconfig"; sourceTree = "<group>"; };
-		E1EFDD201BC2BB9F2ECD42F8 /* Pods_quranreadlistenmemorize.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quranreadlistenmemorize.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,20 +200,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B18F12CE4A0A244C89269BC8 /* Pods_quranreadlistenmemorize.framework in Frameworks */,
+				452235D12559871B00C34458 /* BuildFile in Frameworks */,
+				459B7061255F24F300744492 /* BuildFile in Frameworks */,
+				459B7074255F2BF800744492 /* BuildFile in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		38BDDCA2C3F1D589B502BF6F /* Pods */ = {
+		452235B825586B6A00C34458 /* Api */ = {
 			isa = PBXGroup;
 			children = (
-				E0A99FBB9E19FBAFB471EFD0 /* Pods-quranreadlistenmemorize.debug.xcconfig */,
-				C882A12837FA2353FD30EC3E /* Pods-quranreadlistenmemorize.release.xcconfig */,
+				452235B925586B6A00C34458 /* Environment.swift */,
+				452235BB25586B6A00C34458 /* EnvironmentProvider.swift */,
+				452235BC25586B6A00C34458 /* EnvironmentUtility.swift */,
 			);
-			name = Pods;
+			path = Api;
 			sourceTree = "<group>";
 		};
 		452ECE24220983AB0006EF0E = {
@@ -214,8 +224,8 @@
 			children = (
 				452ECE2F220983AB0006EF0E /* quranreadlistenmemorize */,
 				452ECE2E220983AB0006EF0E /* Products */,
-				38BDDCA2C3F1D589B502BF6F /* Pods */,
 				D0DEE8FAE9E748B0DB81AD38 /* Frameworks */,
+				B360DF04AD97DF1E52F60B07 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -339,7 +349,9 @@
 		452ECE5E2209C52D0006EF0E /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				452ECE5F2209C54F0006EF0E /* APIManager.swift */,
+				452235B825586B6A00C34458 /* Api */,
+				452235C225586B7400C34458 /* Endpoints.swift */,
+				452235C725586BE100C34458 /* FileOperationProvider.swift */,
 				450C641C220CC3680063E6E0 /* FileOperationManager.swift */,
 				45E6B43A22145905003DA553 /* PersistentManager.swift */,
 				45EAF3DF221D468400547FE1 /* NotificationManager.swift */,
@@ -405,11 +417,17 @@
 			path = Sound;
 			sourceTree = "<group>";
 		};
+		B360DF04AD97DF1E52F60B07 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D0DEE8FAE9E748B0DB81AD38 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				45E94E522231458B008EA235 /* libFirebaseCore.a */,
-				E1EFDD201BC2BB9F2ECD42F8 /* Pods_quranreadlistenmemorize.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -421,18 +439,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 452ECE42220983AC0006EF0E /* Build configuration list for PBXNativeTarget "quranreadlistenmemorize" */;
 			buildPhases = (
-				A7E1BAE6D2EE3778A7B25485 /* [CP] Check Pods Manifest.lock */,
 				452ECE29220983AB0006EF0E /* Sources */,
 				452ECE2A220983AB0006EF0E /* Frameworks */,
 				452ECE2B220983AB0006EF0E /* Resources */,
-				0D96AD8F3EF0BF1C74DEC07B /* [CP] Embed Pods Frameworks */,
-				9AD80CBF334FB068B059BDE4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = quranreadlistenmemorize;
+			packageProductDependencies = (
+				452235D02559871B00C34458 /* SwiftPackageProductDependency */,
+				459B7060255F24F300744492 /* SwiftPackageProductDependency */,
+				459B7073255F2BF800744492 /* SwiftPackageProductDependency */,
+			);
 			productName = quranreadlistenmemorize;
 			productReference = 452ECE2D220983AB0006EF0E /* quranreadlistenmemorize.app */;
 			productType = "com.apple.product-type.application";
@@ -471,6 +491,10 @@
 				de,
 			);
 			mainGroup = 452ECE24220983AB0006EF0E;
+			packageReferences = (
+				459B705F255F24F300744492 /* RemoteSwiftPackageReference */,
+				459B7072255F2BF800744492 /* RemoteSwiftPackageReference */,
+			);
 			productRefGroup = 452ECE2E220983AB0006EF0E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -509,62 +533,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		0D96AD8F3EF0BF1C74DEC07B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-quranreadlistenmemorize/Pods-quranreadlistenmemorize-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-quranreadlistenmemorize/Pods-quranreadlistenmemorize-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9AD80CBF334FB068B059BDE4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-quranreadlistenmemorize/Pods-quranreadlistenmemorize-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A7E1BAE6D2EE3778A7B25485 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-quranreadlistenmemorize-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		452ECE29220983AB0006EF0E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -575,15 +543,16 @@
 				452ECE4E22099CFB0006EF0E /* Edition.swift in Sources */,
 				450C82B92209FAED00611473 /* SurahViewCell.swift in Sources */,
 				45EA03CF222B1478007DEF44 /* PrayerLocationMO+CoreDataClass.swift in Sources */,
+				452235C025586B6A00C34458 /* EnvironmentUtility.swift in Sources */,
 				452ECE4A2209861E0006EF0E /* Base.swift in Sources */,
 				45E94E4D223047D0008EA235 /* AppConfigurationMO+CoreDataClass.swift in Sources */,
 				450C82C5220A169900611473 /* AyahViewModel.swift in Sources */,
 				45EABF69221C9A460058F490 /* DhikrViewModel.swift in Sources */,
 				45E6EE2822176855004918BB /* PrayerTimeViewCell.swift in Sources */,
+				452235BF25586B6A00C34458 /* EnvironmentProvider.swift in Sources */,
 				45EABF63221C86BB0058F490 /* DhikrViewController.swift in Sources */,
 				45168084221B0DBF00E3E4D7 /* DhikrDetailViewModel.swift in Sources */,
 				45EB384A2217263600C5F50A /* PrayerLocationViewModel.swift in Sources */,
-				452ECE602209C54F0006EF0E /* APIManager.swift in Sources */,
 				450C82BF220A00DA00611473 /* Enums.swift in Sources */,
 				45E743D0221EBA38009F7176 /* PrayerNotificationViewController.swift in Sources */,
 				450C82C3220A15A200611473 /* AyahViewController.swift in Sources */,
@@ -595,6 +564,7 @@
 				45EB38462216B55100C5F50A /* PrayerLocationViewController.swift in Sources */,
 				452ECE31220983AB0006EF0E /* AppDelegate.swift in Sources */,
 				450C82BB2209FC0500611473 /* SurahViewController.swift in Sources */,
+				452235C325586B7400C34458 /* Endpoints.swift in Sources */,
 				45E72270222DAF7D00438C44 /* PrayerSoundMO+CoreDataProperties.swift in Sources */,
 				45EBE867222725BB005FFE93 /* PrayerNotificationViewModel.swift in Sources */,
 				45EB4F04222E6A7C00AEDE27 /* PrayerSoundSelectionViewModel.swift in Sources */,
@@ -602,6 +572,7 @@
 				45F6DFE6222EF4AD0083F3C8 /* Utility.swift in Sources */,
 				45E94E4F223047D0008EA235 /* EditionMO+CoreDataClass.swift in Sources */,
 				45E6B4372214256B003DA553 /* EditionViewModel.swift in Sources */,
+				452235BD25586B6A00C34458 /* Environment.swift in Sources */,
 				45EBE9E52226857A005A35EE /* PrayerTimeMO+CoreDataProperties.swift in Sources */,
 				45EA03D0222B1478007DEF44 /* PrayerLocationMO+CoreDataProperties.swift in Sources */,
 				452ECE592209AE730006EF0E /* Constants.swift in Sources */,
@@ -624,6 +595,7 @@
 				452ECE39220983AB0006EF0E /* quranreadlistenmemorize.xcdatamodeld in Sources */,
 				45EAF3E0221D468400547FE1 /* NotificationManager.swift in Sources */,
 				452ECE5D2209B2640006EF0E /* UIViewExtensions.swift in Sources */,
+				452235C825586BE100C34458 /* FileOperationProvider.swift in Sources */,
 				45168082221B0D9000E3E4D7 /* DhikrDetailViewController.swift in Sources */,
 				45E743D2221F2F96009F7176 /* PrayerNotificationViewCell.swift in Sources */,
 				45E6B43B22145905003DA553 /* PersistentManager.swift in Sources */,
@@ -783,7 +755,6 @@
 		};
 		452ECE43220983AC0006EF0E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E0A99FBB9E19FBAFB471EFD0 /* Pods-quranreadlistenmemorize.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -803,7 +774,6 @@
 		};
 		452ECE44220983AC0006EF0E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C882A12837FA2353FD30EC3E /* Pods-quranreadlistenmemorize.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -843,6 +813,42 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		459B705F255F24F300744492 /* RemoteSwiftPackageReference */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/urenmobile/NetworkPackage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
+		459B7072255F2BF800744492 /* RemoteSwiftPackageReference */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		452235D02559871B00C34458 /* SwiftPackageProductDependency */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NetworkPackage;
+		};
+		459B7060255F24F300744492 /* SwiftPackageProductDependency */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 459B705F255F24F300744492 /* RemoteSwiftPackageReference */;
+			productName = NetworkPackage;
+		};
+		459B7073255F2BF800744492 /* SwiftPackageProductDependency */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 459B7072255F2BF800744492 /* RemoteSwiftPackageReference */;
+			productName = FirebaseInstallations;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		452ECE37220983AB0006EF0E /* quranreadlistenmemorize.xcdatamodeld */ = {

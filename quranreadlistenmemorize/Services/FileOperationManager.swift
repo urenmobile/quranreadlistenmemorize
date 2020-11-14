@@ -148,6 +148,28 @@ class FileOperationManager {
         }
     }
     
+    func saveFile(from sourceUrl: URL, to destinationUrl: URL) -> Bool? {
+        let fileManager = FileManager.default
+        try? fileManager.removeItem(at: destinationUrl)
+        do {
+            try fileManager.moveItem(at: sourceUrl, to: destinationUrl)
+            return true
+        } catch let error {
+            debugPrint("Could not copy file to disk: \(error)")
+        }
+        return nil
+    }
+    
+    func copyFile(from sourceUrl: URL, to destinationUrl: URL) {
+        let fileManager = FileManager.default
+        try? fileManager.removeItem(at: destinationUrl)
+        do {
+            try fileManager.copyItem(at: sourceUrl, to: destinationUrl)
+        } catch let error {
+            debugPrint("Could not copy file to disk: \(error.localizedDescription)")
+        }
+    }
+    
     
     // Dhikrs Local file
     func getDhikrsFromResource() -> [Dhikr]? {

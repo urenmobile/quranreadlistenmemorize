@@ -12,15 +12,15 @@ class MainTabBarController: BaseTabBarController {
     // MARK: - Variables
     
     // MARK: - Views
-    let surahViewController: SurahViewController = {
-        let viewController = SurahViewController(style: .grouped)
-        viewController.viewModel = SurahViewModel()
+    let prayerTimeViewController: PrayerTimeViewController = {
+        let viewController = PrayerTimeViewController(style: .grouped)
+        viewController.viewModel = PrayerTimeViewModel()
         return viewController
     }()
     
-    let prayerTimeViewController: PrayerTimeViewController = {
-       let viewController = PrayerTimeViewController(style: .grouped)
-        viewController.viewModel = PrayerTimeViewModel()
+    let surahViewController: SurahViewController = {
+        let viewController = SurahViewController(style: .grouped)
+        viewController.viewModel = SurahViewModel()
         return viewController
     }()
     
@@ -39,11 +39,11 @@ class MainTabBarController: BaseTabBarController {
     func setupTabBar() {
         view.backgroundColor = UIColor.white
         
-        surahViewController.tabBarItem = UITabBarItem(title: surahViewController.iconTitle, image: surahViewController.icon, tag: 0)
-        prayerTimeViewController.tabBarItem = UITabBarItem(title: prayerTimeViewController.iconTitle, image: prayerTimeViewController.icon, tag: 1)
+        prayerTimeViewController.tabBarItem = UITabBarItem(title: prayerTimeViewController.iconTitle, image: prayerTimeViewController.icon, tag: 0)
+        surahViewController.tabBarItem = UITabBarItem(title: surahViewController.iconTitle, image: surahViewController.icon, tag: 1)
         moreViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 2)
         
-        let controllers = [surahViewController, prayerTimeViewController, moreViewController]
+        let controllers = [prayerTimeViewController, surahViewController, moreViewController]
         viewControllers = controllers.compactMap({ BaseNavigationController(rootViewController: $0) })
     }
 }

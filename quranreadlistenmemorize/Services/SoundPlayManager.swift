@@ -7,6 +7,7 @@
 //
 
 import AVFoundation
+import NetworkPackage
 
 class SoundPlayManager {
     static let shared = SoundPlayManager()
@@ -25,10 +26,10 @@ class SoundPlayManager {
         let withExt = name.components(separatedBy: ".").last ?? ""
         
         guard let url = Bundle.main.url(forResource: resourceName, withExtension: withExt) else { return }
-        createPlaySession(url)
+        createPlaySession(with: url)
     }
     
-    private func createPlaySession(_ url: URL) {
+    private func createPlaySession(with url: URL) {
         do {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
             try AVAudioSession.sharedInstance().setActive(true)
@@ -50,20 +51,28 @@ class SoundPlayManager {
     }
     
     func playAyahSound(ayahNumber: Int) {
-        APIManager.shared.downloadAndSaveLocalSound(ayahNumber: ayahNumber) { (result) in
-            handleResult(result)
+        if FileOperationManager.shared.checkFileExists(ayahNumber: ayahNumber) {
+            let path = FileOperationManager.shared.localMp3FilePath(for: ayahNumber)
+            return createPlaySession(with: path)
         }
         
-        func handleResult(_ result: NetworkResult<URL>) {
-            switch result {
+        let parameters = [PersistentManager.shared.appConfiguration.selectedAudioEditionId, "\(ayahNumber)"]
+        let request = Endpoints.Paths.mediaAudio.asUrlRequest(with: parameters)
+        
+        APIManager.shared.download(with: request) { [weak self] in
+            switch $0 {
             case .success(let url):
-                createPlaySession(url)
+                let destinationUrl = FileOperationManager.shared.localMp3FilePath(for: ayahNumber)
+                if let isSavedSuccessfully = FileOperationManager.shared.saveFile(from: url, to: destinationUrl) {
+                    self?.createPlaySession(with: destinationUrl)
+                }
             case .failure(let error):
                 debugPrint("error oldu: \(error)")
             default:
                 return
             }
         }
+        
     }
     
     func stopSound() {
