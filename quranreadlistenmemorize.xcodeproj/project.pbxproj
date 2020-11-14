@@ -23,7 +23,7 @@
 		452235C025586B6A00C34458 /* EnvironmentUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452235BC25586B6A00C34458 /* EnvironmentUtility.swift */; };
 		452235C325586B7400C34458 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452235C225586B7400C34458 /* Endpoints.swift */; };
 		452235C825586BE100C34458 /* FileOperationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452235C725586BE100C34458 /* FileOperationProvider.swift */; };
-		452235D12559871B00C34458 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 452235D02559871B00C34458 /* SwiftPackageProductDependency */; };
+		452235D12559871B00C34458 /* NetworkPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 452235D02559871B00C34458 /* NetworkPackage */; };
 		4525C5122209EC4C00441E6F /* Quran.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4525C5112209EC4C00441E6F /* Quran.bundle */; };
 		452ECE31220983AB0006EF0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452ECE30220983AB0006EF0E /* AppDelegate.swift */; };
 		452ECE39220983AB0006EF0E /* quranreadlistenmemorize.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 452ECE37220983AB0006EF0E /* quranreadlistenmemorize.xcdatamodeld */; };
@@ -37,8 +37,8 @@
 		452ECE5B2209AE8E0006EF0E /* LocalizedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452ECE5A2209AE8E0006EF0E /* LocalizedConstants.swift */; };
 		452ECE5D2209B2640006EF0E /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452ECE5C2209B2640006EF0E /* UIViewExtensions.swift */; };
 		45459447220B06DF00FAED4D /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45459446220B06DF00FAED4D /* MainTabBarController.swift */; };
-		459B7061255F24F300744492 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 459B7060255F24F300744492 /* SwiftPackageProductDependency */; };
-		459B7074255F2BF800744492 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 459B7073255F2BF800744492 /* SwiftPackageProductDependency */; };
+		459B7061255F24F300744492 /* NetworkPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 459B7060255F24F300744492 /* NetworkPackage */; };
+		459B7074255F2BF800744492 /* FirebaseInstallations in Frameworks */ = {isa = PBXBuildFile; productRef = 459B7073255F2BF800744492 /* FirebaseInstallations */; };
 		45E6B4352214254E003DA553 /* EditionViewEditionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E6B4342214254E003DA553 /* EditionViewEditionCell.swift */; };
 		45E6B4372214256B003DA553 /* EditionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E6B4362214256B003DA553 /* EditionViewModel.swift */; };
 		45E6B43922143F58003DA553 /* PrayerTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E6B43822143F58003DA553 /* PrayerTimeViewController.swift */; };
@@ -200,9 +200,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				452235D12559871B00C34458 /* BuildFile in Frameworks */,
-				459B7061255F24F300744492 /* BuildFile in Frameworks */,
-				459B7074255F2BF800744492 /* BuildFile in Frameworks */,
+				452235D12559871B00C34458 /* NetworkPackage in Frameworks */,
+				459B7061255F24F300744492 /* NetworkPackage in Frameworks */,
+				459B7074255F2BF800744492 /* FirebaseInstallations in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,7 +225,6 @@
 				452ECE2F220983AB0006EF0E /* quranreadlistenmemorize */,
 				452ECE2E220983AB0006EF0E /* Products */,
 				D0DEE8FAE9E748B0DB81AD38 /* Frameworks */,
-				B360DF04AD97DF1E52F60B07 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -417,13 +416,6 @@
 			path = Sound;
 			sourceTree = "<group>";
 		};
-		B360DF04AD97DF1E52F60B07 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		D0DEE8FAE9E748B0DB81AD38 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -449,9 +441,9 @@
 			);
 			name = quranreadlistenmemorize;
 			packageProductDependencies = (
-				452235D02559871B00C34458 /* SwiftPackageProductDependency */,
-				459B7060255F24F300744492 /* SwiftPackageProductDependency */,
-				459B7073255F2BF800744492 /* SwiftPackageProductDependency */,
+				452235D02559871B00C34458 /* NetworkPackage */,
+				459B7060255F24F300744492 /* NetworkPackage */,
+				459B7073255F2BF800744492 /* FirebaseInstallations */,
 			);
 			productName = quranreadlistenmemorize;
 			productReference = 452ECE2D220983AB0006EF0E /* quranreadlistenmemorize.app */;
@@ -492,8 +484,8 @@
 			);
 			mainGroup = 452ECE24220983AB0006EF0E;
 			packageReferences = (
-				459B705F255F24F300744492 /* RemoteSwiftPackageReference */,
-				459B7072255F2BF800744492 /* RemoteSwiftPackageReference */,
+				459B705F255F24F300744492 /* XCRemoteSwiftPackageReference "NetworkPackage" */,
+				459B7072255F2BF800744492 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 452ECE2E220983AB0006EF0E /* Products */;
 			projectDirPath = "";
@@ -815,7 +807,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		459B705F255F24F300744492 /* RemoteSwiftPackageReference */ = {
+		459B705F255F24F300744492 /* XCRemoteSwiftPackageReference "NetworkPackage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/urenmobile/NetworkPackage.git";
 			requirement = {
@@ -823,7 +815,7 @@
 				minimumVersion = 0.0.1;
 			};
 		};
-		459B7072255F2BF800744492 /* RemoteSwiftPackageReference */ = {
+		459B7072255F2BF800744492 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
 			requirement = {
@@ -834,18 +826,18 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		452235D02559871B00C34458 /* SwiftPackageProductDependency */ = {
+		452235D02559871B00C34458 /* NetworkPackage */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = NetworkPackage;
 		};
-		459B7060255F24F300744492 /* SwiftPackageProductDependency */ = {
+		459B7060255F24F300744492 /* NetworkPackage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 459B705F255F24F300744492 /* RemoteSwiftPackageReference */;
+			package = 459B705F255F24F300744492 /* XCRemoteSwiftPackageReference "NetworkPackage" */;
 			productName = NetworkPackage;
 		};
-		459B7073255F2BF800744492 /* SwiftPackageProductDependency */ = {
+		459B7073255F2BF800744492 /* FirebaseInstallations */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 459B7072255F2BF800744492 /* RemoteSwiftPackageReference */;
+			package = 459B7072255F2BF800744492 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseInstallations;
 		};
 /* End XCSwiftPackageProductDependency section */
